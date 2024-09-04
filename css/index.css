@@ -1,0 +1,52 @@
+li {
+    background-color: white;
+    width: fit-content;
+}
+
+.section {
+    border: 5px solid cyan;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+
+    width: 100%;
+}
+
+.section:hover {
+    border-style: dashed;
+    rotate: 1deg;
+}
+
+.section:active {
+    rotate: 90deg;
+}
+
+#main-list {
+    width: fit-content;
+}
+
+.images-container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+
+    width: 100%;
+    justify-content: center;
+
+    img {
+        width: 100px;
+        border: 1px dashed cyan;
+        border-radius: 160px;
+        animation: spin 2s linear;
+        animation-iteration-count: infinite;
+    }
+}
+
+@keyframes spin {
+    from {
+        rotate: 0deg;
+    }
+    to {
+        rotate: 360deg;
+    }
+}
